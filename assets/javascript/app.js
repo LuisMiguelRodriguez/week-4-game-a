@@ -12,6 +12,7 @@
     game1.points += value;
     console.log(game1.points);
     $('#points').html(game1.points);
+    game1.winOrLoose();
 
   });
 
@@ -22,6 +23,7 @@
     game1.points += value;
     console.log(game1.points);
     $('#points').html(game1.points);
+    game1.winOrLoose();
   });
 
   $('#black').on("click", function() {
@@ -31,6 +33,7 @@
     game1.points += value;
     console.log(game1.points);
     $('#points').html(game1.points);
+    game1.winOrLoose();
   });
 
   $('#green').on("click", function() {
@@ -40,6 +43,7 @@
     game1.points += value;
     console.log(game1.points);
     $('#points').html(game1.points);
+    game1.winOrLoose();
   });
 
 
@@ -57,6 +61,7 @@
 
     this.crystals =  ["red","blue","black","green"];
     this.numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+    this.goal = 0;
     this.counter = 0;
     this.points = 0;
     this.randomNumber = function (){
@@ -74,9 +79,17 @@
         this.numbers.splice(index , 1);
         console.log(this.numbers);
       }
-
-      $("#pointsToMatch").html(this.pointsToMatch());
+      var goal = this.pointsToMatch();
+      this.goal = goal;
+      $("#pointsToMatch").html(goal);
       $("#points").html(this.points);
+    };
+    this.winOrLoose = function (){
+      if(this.goal === this.points) {
+        alert("you win");
+      } else if ( this.points > this.goal ){
+        alert("you loose");
+      }
     };
 
   }
