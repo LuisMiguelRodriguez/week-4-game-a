@@ -5,19 +5,41 @@
   console.log(game1.pointsToMatch());
 
   $('#red').on("click", function() {
+    //lets grab the data from gem
+    var value = $('#red').data("value");
+    console.log(value);
+    //will need to add that value to pointsToMatch
+    game1.points += value;
+    console.log(game1.points);
+    $('#points').html(game1.points);
 
   });
 
   $('#blue').on("click", function() {
-
+    var value = $('#blue').data("value");
+    console.log(value);
+    //will need to add that value to pointsToMatch
+    game1.points += value;
+    console.log(game1.points);
+    $('#points').html(game1.points);
   });
 
   $('#black').on("click", function() {
-
+    var value = $('#black').data("value");
+    console.log(value);
+    //will need to add that value to pointsToMatch
+    game1.points += value;
+    console.log(game1.points);
+    $('#points').html(game1.points);
   });
 
   $('#green').on("click", function() {
-
+    var value = $('#green').data("value");
+    console.log(value);
+    //will need to add that value to pointsToMatch
+    game1.points += value;
+    console.log(game1.points);
+    $('#points').html(game1.points);
   });
 
 
