@@ -64,6 +64,8 @@
     this.goal = 0;
     this.counter = 0;
     this.points = 0;
+    this.wins = 0;
+    this.losses = 0;
     this.randomNumber = function (){
       return this.numbers[Math.floor((Math.random() * this.numbers.length))];
     };
@@ -87,8 +89,10 @@
     this.winOrLoose = function (){
       if(this.goal === this.points) {
         alert("you win");
+        this.wins++;
       } else if ( this.points > this.goal ){
         alert("you loose");
+        this.losses++;
       }
     };
 

@@ -28,6 +28,9 @@
   display: inline-block;
 }
 #pointsContainer {
+
+}
+.container {
   background-color: orange;
   width:200px;
   height:300px;
@@ -36,8 +39,10 @@
   text-align: center;
   position:relative;
 }
-
 #pointsToMatch {
+
+}
+.top {
   background-color: black;
   color: white;
   width:100px;
@@ -50,6 +55,9 @@
 
 }
 #points {
+
+}
+.bottom {
   background-color: yellow;
   width:100px;
   height:100px;
