@@ -7,17 +7,21 @@
   </head>
   <body>
 
-    <div id="red"></div>
-    <div id="blue"></div>
-    <div id="green"></div>
-    <div id="black"></div>
+    <div id="red" onclick="data(event)"></div>
+    <div id="blue" onclick="data(event)"></div>
+    <div id="green" onclick="data(event)"></div>
+    <div id="black" onclick="data(event)"></div>
     <div id="pointsContainer" class="container">
-      <div id="pointsToMatch" class="top"></div>
-      <div id="points" class="bottom"></div>
+      Points To Match: <div id="pointsToMatch" class="top"></div>
     </div>
     <div class="container">
-      <div id="wins" class="top"></div>
-      <div id="losses" class="bottom"></div>
+      Current Points: <div id="points" class="top"></div>
+    </div>
+    <div class="container">
+      Wins: <div id="wins" class="top"></div>
+    </div>
+    <div class="container">
+      Losses: <div id="losses" class="bottom"></div>
     </div>
 
 
