@@ -3,14 +3,10 @@
 
   game1.addValues();
 
-  function data (e){
-    var value = $(e.target).attr('data-value');
-    console.log(parseInt(value));
-    game1.points += parseInt(value);
-    console.log(game1.points);
-    $('#points').html(game1.points);
-    game1.winOrLoose();
-  }
+  // Previous Logic would not grab the new data attribute after
+  // re rerunning addValues even the dom
+  // updates and the values can be seen.
+  //
   // $('#red').on("click", function() {
   //   //lets grab the data from gem
   //   var value = $('#red').data("value");
@@ -53,12 +49,21 @@
   //   game1.winOrLoose();
   // });
 
+'  '
 
 
 // **********************************************************************
 // *****************************Functions********************************
 // **********************************************************************
-
+  //grabs data from data attribute dynamically
+  function data (e){
+    var value = $(e.target).attr('data-value');
+    console.log(parseInt(value));
+    game1.points += parseInt(value);
+    console.log(game1.points);
+    $('#points').html(game1.points);
+    game1.winOrLoose();
+  }
 
   function Crystal (){
     //function to pick a number from 12 - 120

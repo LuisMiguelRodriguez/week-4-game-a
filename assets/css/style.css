@@ -1,71 +1,72 @@
-#red {
-  background-color: red;
+body {
+  background-color:#556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.box {
   width:100px;
   height:100px;
-  margin: 20px;
+  margin: 2px;
   display: inline-block;
+}
+
+#red {
+  background-image: url('../images/crystal01.gif');
+
 }
 
 #blue {
-  background-color: blue;
-  width:100px;
-  height:100px;
-  margin: 20px;
-  display: inline-block;
-}
-#green {
-  background-color: green;
-  width:100px;
-  height:100px;
-  margin: 20px;
-  display: inline-block;
-}
-#black {
-  background-color: black;
-  width:100px;
-  height:100px;
-  margin: 20px;
-  display: inline-block;
-}
-#pointsContainer {
+  background-image: url('../images/crystal02.gif');
 
 }
+#green {
+  background-image: url('../images/crystal03.gif');
+
+}
+#black {
+  background-image: url('../images/crystal04.gif');
+
+}
+
 .container {
   background-color: orange;
-  width:150px;
-  height:150px;
+  width:140px;
+  height:140px;
   margin: 20px;
   display: inline-block;
   text-align: center;
   position:relative;
+  overflow: hidden;
 }
 #pointsToMatch {
 
 }
-.top {
-  background-color: black;
-  color: white;
-  width:100px;
-  height:100px;
-  margin: 20px;
-  display: inline;
-  position: absolute;
-  top:0;
-  left:0;
-
+.right {
+  float: left;
 }
-#points {
-
+.left {
+  float:left;
 }
-.bottom {
-  background-color: yellow;
-  width:100px;
-  height:100px;
-  margin: 20px;
-  display: inline;
+
+.clear {
+  clear: both;
+}
+.padding {
+  padding:10px;
+}
+
+header h1 {
+  background-color: green;
+  width:400px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
+}
+.label {
+  background-color: grey;
 }

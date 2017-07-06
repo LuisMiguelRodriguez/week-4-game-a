@@ -6,25 +6,42 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <header>
+      <h1>Crystal Collector</h1>
+    </header>
 
-    <div id="red" onclick="data(event)"></div>
-    <div id="blue" onclick="data(event)"></div>
-    <div id="green" onclick="data(event)"></div>
-    <div id="black" onclick="data(event)"></div>
-    <div id="pointsContainer" class="container">
-      Points To Match: <div id="pointsToMatch" class="top"></div>
-    </div>
-    <div class="container">
-      Current Points: <div id="points" class="top"></div>
-    </div>
-    <div class="container">
-      Wins: <div id="wins" class="top"></div>
-    </div>
-    <div class="container">
-      Losses: <div id="losses" class="bottom"></div>
+    <div id="pointsContainer" class="container left">
+      <div class="label">
+        <h4>Points To Match</h4>
+      </div>
+      <div id="pointsToMatch"></div>
     </div>
 
+    <div class="right container">
+        <div class="padding">
+          <div class="label">Wins</div>
+          <span id="wins"></span></div>
+        <br>
+        <div class="padding">
+          <div class="label">
+            Losses
+          </div><span id="losses"></span></div>
+    </div>
 
+    <div class="clear"></div>
+
+    <div id="red" class="box"onclick="data(event)"></div>
+    <div id="blue" class="box"onclick="data(event)"></div>
+    <div id="green" class="box"onclick="data(event)"></div>
+    <div id="black" class="box"onclick="data(event)"></div>
+
+    <div class="clear"></div>
+    <div class="container">
+      <div class="label">
+        <h4>Total Score</h4>
+      </div>
+      <div id="points"></div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="assets/javascript/app.js" charset="utf-8"></script>
